@@ -13,6 +13,9 @@
 		4059245C1EF5229700758928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059245A1EF5229700758928 /* Main.storyboard */; };
 		4059245E1EF5229700758928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4059245D1EF5229700758928 /* Assets.xcassets */; };
 		405924611EF5229700758928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059245F1EF5229700758928 /* LaunchScreen.storyboard */; };
+		4059246F1EF8048C00758928 /* ZRRunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4059246E1EF8048C00758928 /* ZRRunLoopSource.m */; };
+		405924721EF808E600758928 /* ZRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 405924711EF808E600758928 /* ZRAppDelegate.m */; };
+		407A4B991EF9013800291524 /* ZRWorkerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A4B981EF9013800291524 /* ZRWorkerClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		4059245D1EF5229700758928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		405924601EF5229700758928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		405924621EF5229700758928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4059246D1EF8048C00758928 /* ZRRunLoopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRRunLoopSource.h; sourceTree = "<group>"; };
+		4059246E1EF8048C00758928 /* ZRRunLoopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRRunLoopSource.m; sourceTree = "<group>"; };
+		405924701EF808E600758928 /* ZRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRAppDelegate.h; sourceTree = "<group>"; };
+		405924711EF808E600758928 /* ZRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRAppDelegate.m; sourceTree = "<group>"; };
+		407A4B971EF9013800291524 /* ZRWorkerClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRWorkerClass.h; sourceTree = "<group>"; };
+		407A4B981EF9013800291524 /* ZRWorkerClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRWorkerClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		405924501EF5229700758928 /* RunLoopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4059246C1EF8046500758928 /* RunLoopSource */,
 				405924541EF5229700758928 /* AppDelegate.h */,
 				405924551EF5229700758928 /* AppDelegate.m */,
 				405924571EF5229700758928 /* ViewController.h */,
@@ -77,6 +87,19 @@
 				405924521EF5229700758928 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4059246C1EF8046500758928 /* RunLoopSource */ = {
+			isa = PBXGroup;
+			children = (
+				4059246D1EF8048C00758928 /* ZRRunLoopSource.h */,
+				4059246E1EF8048C00758928 /* ZRRunLoopSource.m */,
+				405924701EF808E600758928 /* ZRAppDelegate.h */,
+				405924711EF808E600758928 /* ZRAppDelegate.m */,
+				407A4B971EF9013800291524 /* ZRWorkerClass.h */,
+				407A4B981EF9013800291524 /* ZRWorkerClass.m */,
+			);
+			name = RunLoopSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407A4B991EF9013800291524 /* ZRWorkerClass.m in Sources */,
+				4059246F1EF8048C00758928 /* ZRRunLoopSource.m in Sources */,
 				405924591EF5229700758928 /* ViewController.m in Sources */,
+				405924721EF808E600758928 /* ZRAppDelegate.m in Sources */,
 				405924561EF5229700758928 /* AppDelegate.m in Sources */,
 				405924531EF5229700758928 /* main.m in Sources */,
 			);
